@@ -47,11 +47,31 @@ body{
 
 
   }
-  .text p{
-    font-size: 20px;
-    font-weight: 600px;
-    margin-top: 20px;
+  
 
+
+  .scroll-bg{
+    font-size: 700px;
+    font-weight: 300px;
+    margin-top: 20px;
+    background: rgba(102, 95, 95, 0.387);
+    width: 750px;
+    margin: 0% auto;
+    padding: 0px;
+    border-radius: 16px;
+  }
+  .scroll-div{
+    width: 750px;
+    background: rgba(102, 95, 95, 0.387);
+    height: 300px;
+    overflow: hidden;
+    overflow-y: scroll;
+    border-radius: 16px;
+  }
+  .scroll-object{
+    color: rgb(238, 238, 238);
+    font-size: 20px;
+    padding: 20px;
   }
 
   
@@ -125,7 +145,7 @@ body{
     background: rgb(7, 8, 8);
     color: rgb(238, 238, 238);
     padding: 10px 30px;
-    border-radius: 30px; 
+    border-radius: 16px; 
     margin: 30px 10px;
     
 
@@ -139,6 +159,7 @@ body{
     top 0px;
     right 0px;
     left 0px;
+    border-radius: 16px;
   }
   
   .nav > .nav-header{
@@ -150,6 +171,7 @@ body{
     font-size: 22px;
     color: #fff;
     padding: 10px 00px 00px 50px;
+    
   }
   
   .nav > .nav-btn{
@@ -161,6 +183,7 @@ body{
     display: inline;
     float: right;
     font-size: 22px;
+    
   }
   
   .nav > .nav-links > a{
@@ -172,6 +195,7 @@ body{
   
   .nav > .nav-links > a:hover {
     background-color: rgba(0, 0, 0, 0.3);
+    
   }
   
   .nav > #nav-check {
@@ -184,21 +208,25 @@ body{
       position: absolute;
       right: 0px;
       top: 0px;
+      
     }
     .nav > .nav-btn > label {
       display: inline-block;
       width: 50px;
       height: 50px;
       padding: 13px;
+      
     }
     .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
       background-color: rgba(0, 0, 0, 0.3);
+      
     }
     .nav > .nav-btn > label > span {
       display: block;
       width: 25px;
       height: 10px;
       border-top: 2px solid #eee;
+      
     }
     .nav > .nav-links {
       position: absolute;
@@ -210,16 +238,21 @@ body{
       overflow-y: hidden;
       top: 50px;
       left: 0px;
+      
+      
     }
     .nav > .nav-links > a {
       display: block;
       width: 100%;
+      
     }
     .nav > #nav-check:not(:checked) ~ .nav-links {
       height: 0px;
+      
     }
     .nav > #nav-check:checked ~ .nav-links {
       height: calc(100vh - 50px);
       overflow-y: auto;
+      
     }
   }
